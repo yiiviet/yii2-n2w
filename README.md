@@ -42,7 +42,7 @@ Ví dụ:
 ```php
 
 /**
-@property int $amount
+* @property int $amount
 */
 
 class Order extends ActiveRecord {
@@ -78,8 +78,8 @@ Cách khai báo nhiều thuộc tính cùng lúc:
 ```php
 
 /**
-@property int $amount
-@property int $tax
+* @property int $amount
+* @property int $tax
 */
 
 class Order extends ActiveRecord {
