@@ -113,8 +113,8 @@ Nếu như bạn muốn sửa `suffix` thành một chuỗi khác thì khai báo
 ```php
 
 /**
-@property int $amount
-@property int $tax
+* @property int $amount
+* @property int $tax
 */
 
 class Order extends ActiveRecord {
