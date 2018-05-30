@@ -153,11 +153,12 @@ class Behavior extends BaseBehavior
     {
         if (isset($this->propertiesFormatted[$name])) {
             $property = $this->propertiesFormatted[$name];
+
             if ($result = $this->n2w($this->owner->{$property})) {
-                return $result . (!empty($this->unit) ? " {$this->unit}" : '');
-            } else {
-                return $result;
+                $result .= (! empty($this->unit) ? " {$this->unit}" : '');
             }
+
+            return $result;
         } else {
             return parent::__get($name);
         }
@@ -174,7 +175,7 @@ class Behavior extends BaseBehavior
      */
     protected function n2w($number, $ucfirst = true)
     {
-        if (!is_numeric($number)) {
+        if (! is_numeric($number)) {
             return false;
         }
 
