@@ -9,7 +9,7 @@
 [![Yii2](https://img.shields.io/badge/Powered_by-Yii_Framework-green.svg?style=flat)](http://www.yiiframework.com/)
 
 Chuyển đổi số sang chữ số là một phần không thể thiếu khi xây dựng 
-chức năng in hóa hoặc các chức năng liên quan đến báo cáo, kê khai. Chính 
+chức năng in hóa đơn hoặc các chức năng liên quan đến báo cáo, kê khai. Chính 
 vì thế mà extension này được xây dựng nên để cung cấp cho bạn tính năng
 chuyển đổi số sang chữ số một cách đơn giản nhất và có thể tái sử dụng
 trên nhiều thuộc tính.
@@ -34,7 +34,8 @@ vào phần `require` trong file composer.json.
 ## Cách sử dụng
 
 Extension này là một `behavior` hổ trợ cho tất cả các `components` của `yii2`
-nên để sử dụng nó thì bạn phải khái báo nó vào `behaviors`.
+nên để sử dụng nó thì bạn phải khái báo nó vào bên trong phương thức
+`behaviors` của `component` (model, active record...).
 
 Ví dụ:
 
